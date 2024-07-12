@@ -1,27 +1,75 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-h1 {
-    color: #333;
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
 }
 
-button {
-    margin: 10px 0;
-    padding: 10px 15px;
-    font-size: 16px;
+header nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
 }
 
-#teams, #statistics {
-    margin-top: 20px;
+header nav a:hover {
+    text-decoration: underline;
 }
 
-.team, .player-input {
-    margin-bottom: 20px;
+main {
+    padding: 2em;
 }
 
-.player-input input {
-    margin-right: 10px;
-    padding: 5px;
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1em;
+}
+
+form input, form button {
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#statsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#statsContainer div {
+    background-color: white;
+    padding: 1em;
+    margin: 0.5em 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

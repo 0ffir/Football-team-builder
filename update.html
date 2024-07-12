@@ -3,16 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Players</title>
+    <title>Update Stats</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Update Players</h1>
-    <form id="playerForm"></form>
-    <button onclick="addPlayer()">Add Player</button>
-    <button onclick="savePlayers()">Save</button>
-    <a href="index.html">Back to Teams</a>
-
+    <header>
+        <h1>Update Player Statistics</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="update.html">Update Stats</a>
+            <a href="stats.html">View Stats</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Add Game Data</h2>
+            <form id="updateForm">
+                <label for="player">Player Name:</label>
+                <input type="text" id="player" name="player" required>
+                <label for="goals">Goals:</label>
+                <input type="number" id="goals" name="goals" required>
+                <label for="assists">Assists:</label>
+                <input type="number" id="assists" name="assists" required>
+                <button type="submit">Update Stats</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Football Team Builder</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

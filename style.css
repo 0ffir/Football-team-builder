@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+#teams, #statistics {
+    margin-top: 20px;
+}
+
+.team, .player-input {
+    margin-bottom: 20px;
+}
+
+.player-input input {
+    margin-right: 10px;
+    padding: 5px;
+}
